@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS buổi 4</title>
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <!-- BT1: -->
+    <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center fw-bold fs-2">
+            Sắp xếp số theo thứ tự tăng dần
+          </div>
+          <div class="card-body fs-5">
+            <div class="form-group">
+              <p>Số thứ 1</p>
+              <input class="form-control" id="number1" />
+            </div>
+            <div class="form-group">
+                <p>Số thứ 2</p>
+                <input class="form-control" id="number2" />
+            </div>
+            <div class="form-group">
+                <p>Số thứ 3</p>
+                <input class="form-control" id="number3" />
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary fw-bold fs-4" id="btnSapXep">
+              Sắp xếp
+            </button>
+            <div class="mt-2" id="ketQua"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <!-- BT2:  -->
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center fw-bold fs-2">
+            Chào hỏi thành viên trong gia đình
+          </div>
+          <div class="card-body fs-5">
+            <div class="form-group d-flex">
+            <select name="" id="member" class="form-control w-25 fs-3 ">
+                <option>Chọn thành viên</option>
+                <option>Bố</option>
+                <option>Mẹ</option>
+                <option>Anh Trai</option>
+                <option>Em Gái</option>
+            </select>
+            
+            <button class="btn btn-secondary fw-bold fs-4 ms-4" id="btnChao">
+                Chào hỏi
+              </button>
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <div class="mt-2 fs-3s" id="chaoHoi"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <!-- BT3: -->
+    <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center fw-bold fs-2">
+            Đếm số nguyên chẵn lẻ
+          </div>
+          <div class="card-body fs-5">
+            <div class="form-group">
+              <p>Số thứ 1</p>
+              <input class="form-control" id="nb1" />
+            </div>
+            <div class="form-group">
+                <p>Số thứ 2</p>
+                <input class="form-control" id="nb2" />
+            </div>
+            <div class="form-group">
+                <p>Số thứ 3</p>
+                <input class="form-control" id="nb3" />
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary fw-bold fs-4" id="btnDem">
+              Đếm số
+            </button>
+            <div class="mt-2" id="soChanLe"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <!-- BT4: -->
+    <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center fw-bold fs-2">
+            Đoán hình tam giác
+          </div>
+          <div class="card-body fs-5">
+            <div class="form-group">
+              <p>Cạnh thứ nhất</p>
+              <input class="form-control" id="canh1" placeholder="Nhập cạnh thứ nhất"/>
+            </div>
+            <div class="form-group">
+                <p>Cạnh thứ 2</p>
+                <input class="form-control" id="canh2" placeholder="Nhập cạnh thứ hai" />
+            </div>
+            <div class="form-group">
+                <p>Cạnh thứ 3</p>
+                <input class="form-control" id="canh3" placeholder="Nhập cạnh thứ ba" />
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary fw-bold fs-4" id="btnDoan">
+              Dự Đoán
+            </button>
+            <div class="mt-2" id="loaiTG"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+    <script src="./main.js"></script>
+</body>
+</html>
