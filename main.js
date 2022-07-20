@@ -113,12 +113,12 @@ document.getElementById('btnDem').onclick = function() {
  */
 
 document.getElementById('btnDoan').onclick = function() {
-    //input
+    //Input
     var canh1 = document.getElementById('canh1').value * 1;
     var canh2 = document.getElementById('canh2').value * 1;
     var canh3 = document.getElementById('canh3').value * 1;
     var loaiTG = '';
-    //process
+    //Process
     if(canh1 == canh2 && canh1 == canh3 && canh2 == canh3) {
         loaiTG = 'Đây là tam giác đều';
     } else if(canh1 == canh2 || canh1 == canh3 || canh2 == canh3) {
@@ -128,6 +128,6 @@ document.getElementById('btnDoan').onclick = function() {
     } else {
         loaiTG = 'Đây là một loại tam giác nào đó';
     }
-    //output    
+    //Output    
     document.getElementById('loaiTG').innerHTML = loaiTG;
 }
